@@ -1,15 +1,23 @@
 # URL Shortener Microservice
 
-Submitting a full length URL into the text box generates a JSON response of a shortened URL to use. Submitting an invalid URL that doesn't follow the `https://www.example.com` format results in a JSON response containing an error instead. Node and Express are used on the back-end to implement an HTTP server for request handling. Mongoose is used in tandem with MongoDB to store converted short URLs for later use.
+#### Documentation can be found on : [https://github.com/viktoriussuwandi/URL-Shortener-Microservice](https://github.com/viktoriussuwandi/URL-Shortener-Microservice)
 
-## Technologies Used
+This is the result to complete the Exercise URL Shortener Microservice project.
+Instructions for building this project can be found at
+[https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/url-shortener-microservice](https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/url-shortener-microservice)
 
-HTML CSS JavaScript NodeJS ExpressJS MongoDB Mongoose 
+###  Some of additional features :
+     * Avoid duplicate original Url
+     * Avoid duplicate short Url
+     * Using local file to save user input
 
-## Repl Linkl
 
-https://repl.it/@ryanajones/URL-Shortener-Microservice#README.md
+### Test Scenario :
+- You should provide your own project, not the example URL.
+- You can POST a URL to `/api/shorturl` and get a JSON response with `original_url` and short_url properties. Here's an example: `{ original_url : 'https://freeCodeCamp.org', short_url : 1}`
+- When you visit `/api/shorturl/<short_url>`, you will be redirected to the original URL.
+- If you pass an invalid URL that doesn't follow the valid `http://www.example.com` format, the JSON response will contain `{ error: 'invalid url' }`
 
-## Screenshot
 
-![alt text](https://i.imgur.com/1kOrKv6.png)
+### Test Result
+![complete](complete.jpg)
